@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+, initial-scale=1.0">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">   
+<!--Font awesome-->
+<script src="https://kit.fontawesome.com/2fbc468e3d.js" crossorigin="anonymous"></script>
+    <title>Modal</title>
+</head>
+<body class="grey lighten-3">
+     <div class="container">
+        <h1 class="pink-text">Modal</h1>
+        
+        <!--Modal Trigger-->
+        <a href="#modal1" class="btn waves-effect white pink-text waves-orange modal-trigger">Modal</a>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Modal header</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque alias excepturi nostrum recusandae rem, quam laudantium doloribus id ipsa tempore!</p>
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Ok</a>
+            </div>
+        </div>
+
+
+        <!--Fixed Footer Modal Trigger-->
+        <a href="#modal2" class="btn waves-effect red white-text waves-orange modal-trigger">Fixed footer Modal</a>
+
+        <div id="modal2" class="modal modal-fixed-footer red lighten-3 white-text">
+            <div class="modal-content">
+                <h4>Fixed footer Modal</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim corporis nostrum quia minima architecto dolor mollitia incidunt cumque, eligendi ab obcaecati quidem illo inventore repellendus similique officiis ex modi. Consequuntur nemo id nam ad ut repudiandae praesentium voluptatibus ipsa ex modi ullam recusandae officia, libero esse, non quo porro quas accusamus laboriosam magni eius, autem ipsum delectus odio? Amet eaque est ipsum consequuntur suscipit saepe deserunt provident velit blanditiis debitis incidunt quasi perferendis nulla dolorem nisi rem laudantium modi maxime iure nihil, numquam labore molestiae reprehenderit! Ex optio fugit odio, magnam facere aspernatur veniam architecto illum, dolorem sint corporis repudiandae aperiam dolores. Ipsa laborum quidem beatae incidunt quas nemo, dolorum, fugiat debitis maxime a eligendi provident distinctio enim ab reprehenderit atque ipsum fugit reiciendis quibusdam corporis ratione rem alias. Eius, quas minima quod commodi vitae doloremque laboriosam? Vel voluptate officia magni. Deleniti facilis placeat eaque sed possimus illo, molestias eligendi!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea pariatur neque animi laudantium ipsam repellendus iusto. Saepe vero veniam, dolorem dolore corporis neque aliquid officia consequatur, id, nostrum distinctio? Culpa deleniti recusandae ducimus, vel excepturi commodi architecto numquam animi unde, doloremque minima aperiam ipsa harum beatae. Repellat delectus qui voluptatum nemo modi natus dolorem voluptates eius sapiente asperiores molestias odit consectetur earum, commodi deserunt sit consequatur? Quod quia doloribus eligendi, odio qui exercitationem tenetur nesciunt, aperiam dolorem accusamus nobis quas ut pariatur mollitia quos. Distinctio aperiam, dicta quaerat soluta velit excepturi totam provident autem, pariatur tenetur, dolorem nulla? Consequuntur, dignissimos!</p>
+
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-red btn-flat">Ok</a>
+            </div>
+        </div>
+
+
+       <!--Bottom Sheet Modal-->
+        <a class="waves-effect waves-light btn modal-trigger pink white-text" 
+        href="#modal3">Bottom Sheet Modal</a>
+
+        <div id="modal3" class="modal bottom-sheet">
+            <div class="">
+                <h4>Bottom Sheet Modal</h4>
+                
+
+                
+                <ul class="collection">
+                    <li class="collection-item avatar">
+                      <img src="img/tulips.jpg" alt="" class="circle">
+                      <span class="title">Title</span>
+                      <p>First Line <br>
+                         Second Line
+                      </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                      <i class="material-icons circle">folder</i>
+                      <span class="title">Title</span>
+                      <p>First Line <br>
+                         Second Line
+                      </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                      <i class="material-icons circle green">insert_chart</i>
+                      <span class="title">Title</span>
+                      <p>First Line <br>
+                         Second Line
+                      </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                      <i class="material-icons circle red">play_arrow</i>
+                      <span class="title">Title</span>
+                      <p>First Line <br>
+                         Second Line
+                      </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                  </ul>
+
+            </div>
+            <div class="modal-footer">
+                <a class="modal-action modal-close waves-effect waves-pink btn-flat">Agree</a>
+            </div>
+        </div>
+
+         
+       
+        <!--End of Container-->
+     </div>
+     
+    <!--Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('.modal').modal({
+      opacity: 0.5,
+      inDuration: 500,
+      outDuration: 1000
+  });
+});
+</script>
+</body>
+</html>
